@@ -9,11 +9,10 @@ cv2.imshow('Maze', img)
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 # Inverting tholdolding will give us a binary image with a white wall and a black background.
 ret, thresh = cv2.threshold(gray, 127, 255, cv2.THRESH_BINARY_INV) 
-cv2.imwrite(filename+ '/1. Threshold1.jpg', thresh)
+cv2.imwrite(filename+'/1. Threshold1.jpg', thresh)
 cv2.imshow('Threshold 1', thresh)
 
 # Contours
-
 contours, hierarchy = cv2.findContours(thresh, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
 dc = cv2.drawContours(thresh, contours, 0, (255, 255, 255),2)
 cv2.imwrite(filename+'/2. Contours1.jpg', dc)
@@ -45,11 +44,18 @@ diff = cv2.absdiff(dilation, erosion)
 cv2.imwrite(filename+'/7. Difference.jpg', diff)
 cv2.imshow('Difference', diff)
 
-#Result
-contour, hierarchy = cv2.findContours(diff, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
-dc = cv2.drawContours(img, contour, 0, (0,255,0),3)
-cv2.imwrite(filename+'/8. Result.jpg', dc)
-cv2.imshow('Solution', dc)
+# splitting the channels of maze
+b, g, r = cv2.split(img)
+mask_inv = cv2.bitwise_not(diff)
+cv2.imwrite(filename+'/8. Mask.jpg', mask_inv)
+cv2.imshow('Mask', mask_inv)
+
+# masking out the green and red colour from the solved path
+r = cv2.bitwise_and(r, r, mask=mask_inv)
+b = cv2.bitwise_and(b, b, mask=mask_inv)
+
+res = cv2.merge((b, g, r))
+cv2.imwrite(filename+'/9. SolvedMaze.jpg', res)
+cv2.imshow('Solved Maze', res)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
