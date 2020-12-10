@@ -86,8 +86,8 @@ Detection of Histogram of oriented gradients.
 The distribution ( histograms ) of directions of gradients ( oriented gradients ) are used as features. Gradients ( x and y derivatives ) of an image are useful because the magnitude of gradients is large around edges and corners ( regions of abrupt intensity changes ) and we know that edges and corners pack in a lot more information about object shape than flat regions.
 #### ✔Face & Eye Detector-
  This detects Faces and Eyes in the images and from webcam. Use of Haar feature-based cascade classifiers which is one of the effective methods of object detection.
-#### ✔HAAR Cascade Classifiers-
-HAAR Cascade is a machine learning based approach where a cascade function is trained from a lot of positive and negative images. It is then used to detect objects in other images.
+ This HAAR Cascade Classifiers is a machine learning based approach where a cascade function is trained from a lot of positive and negative images. It is then used to detect objects in other images.
+
 #### ✔Car video detector-
 Car detection based on Haar-like classifiers, which is the most common technique in computer-vision for cars.
 #### ✔Pedestrian Video Detection-
