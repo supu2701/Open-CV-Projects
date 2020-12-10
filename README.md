@@ -73,6 +73,26 @@ res = cv2.merge((b, g, r))
 2. Maze Solver.py conatains actual python code to solve the mazes
 3. Different algorithm approaches to solve mazes of different dimentions.
 
+## 🛑Project 3: Detection Machine🛑
+This project aims to build the algorithm of a detector which can detect a face, people, car do tasks like finding corners, histogram of oriented gradients, identifying contours, car video detection and pedestrian video detection.
+
+### ⭕Files Present:⭕
+#### ✔Identify Contour-
+This will detect contours contours are a useful tool for shape analysis and object detection and recognition.
+#### ✔Find Corner-
+To classify and or detect objects from an image, we need to find important features such as edges, corners (also known as interest points), or blobs (also known as regions of interest ). Corners are the intersection of two edges, it represents a point in which the directions of these two edges change. Hence, the gradient of the image (in both directions) have a high variation, which can be used to detect it.
+#### ✔Histogram-
+Detection of Histogram of oriented gradients.
+The distribution ( histograms ) of directions of gradients ( oriented gradients ) are used as features. Gradients ( x and y derivatives ) of an image are useful because the magnitude of gradients is large around edges and corners ( regions of abrupt intensity changes ) and we know that edges and corners pack in a lot more information about object shape than flat regions.
+#### ✔Face & Eye Detector-
+ This detects Faces and Eyes in the images and from webcam. Use of Haar feature-based cascade classifiers which is one of the effective methods of object detection.
+#### ✔HAAR Cascade Classifiers-
+HAAR Cascade is a machine learning based approach where a cascade function is trained from a lot of positive and negative images. It is then used to detect objects in other images.
+#### ✔Car video detector-
+Car detection based on Haar-like classifiers, which is the most common technique in computer-vision for cars.
+#### ✔Pedestrian Video Detection-
+Pedestrian detection based on Haar-like classifiers, which is the most common technique in computer-vision for Pedestrian detection.
+
 ## ⭕Tech stack guides⭕
 
 - ✔ [Python 3 guide] (https://www.python.org/doc/):
