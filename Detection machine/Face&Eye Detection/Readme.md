@@ -10,5 +10,5 @@ This contains four files-
 
 ✔face_eye_detection_image.py- This file is used to detect the face and eyes of a person from specified image.
 
-face_eye_detection_camera.py- This file is used to detect the face and eyes of a person from webcam and is using inbuild camera.
+✔face_eye_detection_camera.py- This file is used to detect the face and eyes of a person from webcam and is using inbuild camera.
 
