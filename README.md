@@ -50,15 +50,15 @@ dc = cv2.drawContours(dc, contours, 1, (0,0,0) , 5)
 kernel = np.ones((19, 19), np.uint8)
 dilation = cv2.dilate(thresh, kernel, iterations=1)
 ```
-✔ Eroding the Dilated image by same amount
+✔ Eroding the Dilated image by same amount:
 ```
 erosion = cv2.erode(dilation, kernel, iterations=1)
 ```
-✔ Finding difference of two images
+✔ Finding difference of two images:
 ```
 diff = cv2.absdiff(dilation, erosion)
 ```
-✔ Drawing the obtained path on source images
+✔ Drawing the obtained path on source images:
 ```
 b, g, r = cv2.split(img)
 mask_inv = cv2.bitwise_not(diff)
