@@ -20,12 +20,12 @@ can be empty or have an Obstacle or have an Object.
 ### ⭕The command window displays the following parameters: 
 <img src="https://github.com/supu2701/Shortest-Route-using-Open-CV/blob/main/Path_3.PNG" />
 
-1. Process points
-2. Total Number of occupied grids
-3. Coloured occupied grids
-4. Total Number of coloured occupied grids
-5. Dictionary keys of planned path
-6. Coordinates of planned path
+1. Process points.
+2. Total Number of occupied grids.
+3. Coloured occupied grids.
+4. Total Number of coloured occupied grids.
+5. Dictionary keys of planned path.
+6. Coordinates of planned path.
 
 ## 🛑Project 2: Solve the Maze🛑
 This project aims at finding the solution of perfect mazes, which is defined as a maze that has only one path from any point in the maze to any other point. Also, maze has no in-accessible sections, no circular paths and no open areas. Maze images should have dark walls on light background.
