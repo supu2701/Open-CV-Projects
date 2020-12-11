@@ -6,10 +6,10 @@ The code checks for different sample cases uploaded in Test Images file. The fil
 
 ### ⭕Given:
 
-A set of test images, each containing
+A set of test images, each containing:
 
-✔ 10x10 grid, making 100 squares
-✔ Obstacles marked as black square
+✔ 10x10 grid, making 100 squares.
+✔ Obstacles marked as black square.
 ✔ Starting and ending point of route marked in blue boxes.
 
 
