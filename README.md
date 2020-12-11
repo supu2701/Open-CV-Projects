@@ -32,20 +32,20 @@ This project aims at finding the solution of perfect mazes, which is defined as 
 
 ### ⭕Algorithm to be used:⭕
 
-✔ Loading and converting the source image to binary image
+✔ Loading and converting the source image to binary image:
 ``` 
 filename = '50x50'
 img = cv2.imread(filename+'.png')
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 ret, thresh = cv2.threshold(gray, 127, 255, cv2.THRESH_BINARY_INV) 
 ```
-✔ Finding Contours
+✔ Finding Contours:
 ```
 image, contours, hierarchy = cv2.findContours(thresh, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
 dc = cv2.drawContours(thresh, contours, 0, (255, 255, 255), 5)
 dc = cv2.drawContours(dc, contours, 1, (0,0,0) , 5)
 ```
-✔ Dilating Contours
+✔ Dilating Contours:
 ``` 
 kernel = np.ones((19, 19), np.uint8)
 dilation = cv2.dilate(thresh, kernel, iterations=1)
