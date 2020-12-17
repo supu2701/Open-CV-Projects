@@ -99,6 +99,8 @@ Pedestrian detection based on Haar-like classifiers, which is the most common te
 - ✔ [Open CV] (https://docs.opencv.org/):
 - ✔ [Git and Github] (https://guides.github.com/introduction/):
 
+## ⭕How to Contribute?⭕
+If you wish to help, you can learn more about how you can contribute to this project in the [contribution guide](CONTRIBUTING.md).
 
 
 ## Interesting? Star⭐ this Repo😊
