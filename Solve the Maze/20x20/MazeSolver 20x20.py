@@ -49,11 +49,13 @@ cv2.imwrite(filename+'/7. Difference.jpg', diff)
 cv2.imshow('Difference', diff)
 
 # splitting the channels of maze
-
-
-# Write code for splitting channels of Maze
-
-
+(b,g,r)=img.split()
+cv2.imshow(b)
+cv2.imshow(g)
+cv2.imshow(r)
+cv2.imwrite(filename+'/8. blue.jpg', b)
+cv2.imwrite(filename+'/9. green.jpg', g)
+cv2.imwrite(filename+'/10. red.jpg', r)
 
 # In order to display the solution on the original maze image, first divide the original maze into r, g, b components.
 # Now create a mask by inverting the diff image.
@@ -66,7 +68,7 @@ r = cv2.bitwise_and(r, r, mask=mask_inv)
 b = cv2.bitwise_and(b, b, mask=mask_inv)
 
 res = cv2.merge((b, g, r))
-cv2.imwrite(filename+'/9. SolvedMaze.jpg', res)
+cv2.imwrite(filename+'/11. SolvedMaze.jpg', res)
 cv2.imshow('Solved Maze', res)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
