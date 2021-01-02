@@ -21,3 +21,8 @@ pip install numpy
 
 
 🛑 Sample Output :
+<br><img src="https://github.com/supu2701/Open-CV-Projects/blob/main/Images/cars.gif">
+
+Contributors can make necessary changes in the file given and can even add more files if required.
+
+### Happy Developing 💥
