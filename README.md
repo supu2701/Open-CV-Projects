@@ -93,6 +93,9 @@ Car detection based on Haar-like classifiers, which is the most common technique
 #### ✔Pedestrian Video Detection-
 Pedestrian detection based on Haar-like classifiers, which is the most common technique in computer-vision for Pedestrian detection.
 
+#### ✔Toonify Image-
+A Python aplication which takes Image as input and toonify it i.e make a cartonist image of it.
+
 ## ⭕Tech stack guides⭕
 
 - ✔ [Python 3 guide] (https://www.python.org/doc/):
