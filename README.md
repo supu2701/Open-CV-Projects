@@ -6,11 +6,11 @@
 Identifies the shortest path from the starting to end point using Image processing techniques using Open CV. This project aims at developing a mechanism to identify the shortest path leading to the destination and avoiding any kind of obstacle during robot’s traversal route. The file shortest_path_code using OpenCV and Shortest-Route(Detailed) contains python code consisting of required functions to detect the shortest route between the origin and the destination(denoted by blue box) as well as detect presence of obstacles if any(denoted by black boxes), on the path supposed to be traversed by any simulated bot.
 The code checks for different sample cases uploaded in Test Images file. The file labelled delatiled shows the output in a detailed and self explinable manner consisting of the routes coordinates, obstacle coordinates, path lenght and the actual path taken.
 
-## ❤️ Project Admin
+## ❤️ Project Developed by
 
-|                                     <a href="https://github.com/supu2701"><img src="https://avatars.githubusercontent.com/u/42896577?s=400&u=9530610016fa2171d559af8bcdb3e9178bb7d308&v=4" width=150px height=150px /></a>                                      |
+|                                     <a href="https://github.com/supu2701"><img src="profile_photo.jpg" width=150px height=150px /></a>                                      |
 | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                                                      **[Vaidhyanathan S M](https://www.linkedin.com/in/vaidhyanathansm/)**                                                                                    |
+|                                                                                      **[Shreyashi Kumari](https://www.linkedin.com/in/shreyashi-kumari/)**                                                                                    |
 
 
 ### ⭕Given:
@@ -37,6 +37,9 @@ can be empty or have an Obstacle or have an Object.
 6. Coordinates of planned path
 
 ## 🛑Project 2: Solve the Maze🛑
+
+## Project Developed under KWOC'21 
+KWOC'21- Kharagpur Winter of Code, I mentored and collaborated with a team of 33 participants in developing these Image Processing Projects
 This project aims at finding the solution of perfect mazes, which is defined as a maze that has only one path from any point in the maze to any other point. Also, maze has no in-accessible sections, no circular paths and no open areas. Maze images should have dark walls on light background.
 
 ### ⭕Algorithm to be used:⭕
