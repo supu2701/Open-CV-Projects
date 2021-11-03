@@ -37,6 +37,30 @@ cv2.destroyAllWindows()
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Actual Solution code
 import cv2
 import imutils
